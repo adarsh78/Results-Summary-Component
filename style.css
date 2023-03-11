@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-result{
+    background: rgb(131, 106, 232);
+    background: linear-gradient(191deg, rgba(101, 86, 132,0.7) 0%, rgba(34,4,235,1) 72%);
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.card-result h1{
+    text-align: center;
+    color: hsl(222, 84%, 83%);
+    font-size: 1rem;
+    margin: 1.8rem;
+}
+
+.marks{
+    background: rgb(161, 148, 215);
+    background: linear-gradient(184deg, rgb(71, 39, 198) 0%, rgb(82, 100, 233) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    line-height: 2.3rem;
+}
+
+.marks span{
+    color: hsl(224, 62%, 93%);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1.2rem;
+}
+
+.marks p{
+    color: hsl(222, 84%, 83%);
+    font-size: 0.8rem;
+}
+
+.desc{
+    text-align: center;
+}
+
+.desc h2{
+    color: hsl(224, 62%, 93%);
+    font-size: 1.3rem;
+    margin: 1.4rem 0 0.6rem 0;
+}
+
+.desc p{
+    color: hsl(222, 84%, 83%);
+    font-size: 0.7rem;
+    padding: 0 3rem;
+    margin-bottom: 1.8rem;
+}
+
+.card-summary{
+    background: hsl(0, 0%, 100%);
+    box-shadow: 10px 5px 50px 0px rgba(138,138,235,0.16);
+    width: 16rem;
+    margin-top: -1.6rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.card-margin{
+    margin: 1.6rem 0 0 1.6rem;
+}
+
+.fragment-1, .fragment-2, .fragment-3, .fragment-4{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+.fragment-1{
+    background-color: rgb(245, 220, 220);
+}
+
+.fragment-2{
+    background-color: rgb(239, 235, 223);
+}
+
+.fragment-3{
+    background-color: rgb(208, 241, 209);
+}
+
+.fragment-4{
+    background-color: rgb(190, 205, 240);
+}
+
+.reaction, .memory, .verbal, .visual{
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.6rem 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.reaction p, .memory p, .verbal p, .visual p{
+    margin-left: 0.5rem;
+}
+
+.reaction p {
+    color: hsl(0, 91%, 66%);
+}
+
+.memory p{
+    color: hsl(54, 94%, 36%);
+}
+
+.verbal p{
+    color: hsl(120, 84%, 29%);
+}
+
+.visual p{
+    color: hsl(240, 89%, 66%);
+}
+
+.fragment-1 .got, .fragment-2 .got, .fragment-3 .got, .fragment-4 .got{
+    color: hsl(220, 3%, 65%);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.fragment-1 span, .fragment-2 span, .fragment-3 span, .fragment-4 span{
+    color: black;
+}
+
+button{
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(220, 3%, 65%);
+    font-weight: bold;
+    width: 90%;
+    border-radius: 1rem;
+    height: 2.4rem;
+    border: none;
+    margin-bottom: 1.3rem;
+}
+
+button:hover{
+    color: black;
+    background-color: hsl(240, 100%, 70%);
+    cursor: pointer;
+}
+
+/* .attribution{
+    color: hsl(224, 30%, 27%);
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: black;
+} */
+
+@media (min-width: 1440px) {
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-summary{
+        margin-bottom: -1.6rem;
+        border-radius: 0 1rem 1rem 0;
+        box-shadow: 10px 5px 50px 0px rgba(138,138,235,0.16);
+    }
+    
+  }
